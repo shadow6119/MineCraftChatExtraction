@@ -50,6 +50,9 @@
             this.chatTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.chatTextBox.BackColor = System.Drawing.Color.White;
+            this.chatTextBox.Enabled = false;
+            this.chatTextBox.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.chatTextBox.Location = new System.Drawing.Point(12, 41);
             this.chatTextBox.Multiline = true;
             this.chatTextBox.Name = "chatTextBox";
@@ -64,6 +67,7 @@
             this.SettingButton.TabIndex = 2;
             this.SettingButton.Text = "設定";
             this.SettingButton.UseVisualStyleBackColor = true;
+            this.SettingButton.Click += new System.EventHandler(this.SettingButton_Click);
             // 
             // timer
             // 
@@ -74,12 +78,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(599, 388);
             this.Controls.Add(this.SettingButton);
             this.Controls.Add(this.chatTextBox);
             this.Controls.Add(this.SelectFileButton);
             this.Name = "MainForm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MineCraftChatExtraction";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.ResumeLayout(false);
             this.PerformLayout();
 

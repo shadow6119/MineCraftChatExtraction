@@ -7,3 +7,12 @@ C:\Users\shadow\source\repos\MineCraftChatExtraction\MineCraftChatExtraction\obj
 C:\Users\shadow\source\repos\MineCraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.csproj.GenerateResource.cache
 C:\Users\shadow\source\repos\MineCraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.exe
 C:\Users\shadow\source\repos\MineCraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.pdb
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\bin\Debug\MineCraftChatExtraction.exe.config
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\bin\Debug\MineCraftChatExtraction.exe
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\bin\Debug\MineCraftChatExtraction.pdb
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.csprojAssemblyReference.cache
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.MainForm.resources
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.Properties.Resources.resources
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.csproj.GenerateResource.cache
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.exe
+C:\Users\shadow\Documents\自作ソフト\MinecraftChatExtraction\MineCraftChatExtraction\obj\Debug\MineCraftChatExtraction.pdb

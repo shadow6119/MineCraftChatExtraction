@@ -122,5 +122,17 @@ namespace MineCraftChatExtraction
         {
 
         }
+
+        private void SettingButton_Click(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.SelectFileButton.Visible = false;
+            this.SettingButton.Visible = false;
+            this.TopMost = true;
+            this.Enabled = false;
+
+            this.TransparencyKey = Color.White;
+            
+        }
     }
 }
