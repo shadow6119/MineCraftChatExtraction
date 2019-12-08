@@ -15,11 +15,11 @@ namespace MineCraftChatExtraction
     {
         string filePath;
         int LastLine;//更新の目印
-
+        bool state = true;
         public MainForm()
         {
             InitializeComponent();
-            
+
         }
 
         private void SelectFileButton_Click(object sender, EventArgs e)
@@ -31,14 +31,14 @@ namespace MineCraftChatExtraction
             //デフォルトで選択されるファイルを指定
             ofd.FileName = "latest.log";
             //はじめに表示されるフォルダを指定する Environment.UserNameでユーザ名を取得
-            ofd.InitialDirectory = @"C:\Users\"+ Environment.UserName + @"\AppData\Roaming\.minecraft\logs";
+            ofd.InitialDirectory = @"C:\Users\" + Environment.UserName + @"\AppData\Roaming\.minecraft\logs";
             //[ファイルの種類]に表示される選択肢を指定する
             ofd.Filter = "ログファイル(*.log)|*.log;|すべてのファイル(*.*)|*.*";
 
             ofd.FilterIndex = 1;
             //タイトル
             ofd.Title = "開くファイルを選択してください";
-            
+
             //ダイアログを表示する
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -69,9 +69,9 @@ namespace MineCraftChatExtraction
                         string line;
                         while ((line = sr.ReadLine()) != null)
                         {
-                            LineCount++;                            
+                            LineCount++;
                             if (LineCount <= LastLine) continue;
-                            
+
                             Log log = new Log(line);
 
                             chatTextBox.AppendText(log.message);
@@ -118,21 +118,32 @@ namespace MineCraftChatExtraction
             }
         }
 
-        private void LoadConfig()
-        {
 
-        }
 
         private void SettingButton_Click(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.SelectFileButton.Visible = false;
-            this.SettingButton.Visible = false;
-            this.TopMost = true;
-            this.Enabled = false;
+            if (this.state == true)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.SelectFileButton.Visible = false;
+                this.SettingButton.Text = "戻す";
+                this.TopMost = true;
 
-            this.TransparencyKey = Color.White;
-            
+                this.TransparencyKey = Color.White;
+            }
+            else
+            {
+                Console.WriteLine("aaaa");
+                this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+                this.SelectFileButton.Visible = true;
+                this.SettingButton.Text = "設定";
+                this.TopMost = false;
+
+                this.TransparencyKey = Color.Brown;
+            }
+
+            this.state = !this.state;
+
         }
     }
 }

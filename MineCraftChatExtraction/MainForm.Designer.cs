@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.SelectFileButton = new System.Windows.Forms.Button();
             this.chatTextBox = new System.Windows.Forms.TextBox();
             this.SettingButton = new System.Windows.Forms.Button();
@@ -51,8 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chatTextBox.BackColor = System.Drawing.Color.White;
-            this.chatTextBox.Enabled = false;
-            this.chatTextBox.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.chatTextBox.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 21.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.chatTextBox.Location = new System.Drawing.Point(12, 41);
             this.chatTextBox.Multiline = true;
             this.chatTextBox.Name = "chatTextBox";
@@ -84,6 +84,7 @@
             this.Controls.Add(this.SettingButton);
             this.Controls.Add(this.chatTextBox);
             this.Controls.Add(this.SelectFileButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MineCraftChatExtraction";
